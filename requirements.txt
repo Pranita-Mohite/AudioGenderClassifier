@@ -1,0 +1,7 @@
+Flask
+Gunicorn
+librosa
+numpy
+PyAudio
+tensorflow
+os

@@ -1,0 +1,14 @@
+# services:
+#   api:
+#     type: docker
+#     repository: https://github.com/Pranita-Mohite/AudioGenderClassification.git
+#     branch: master
+#     envVars:
+#       - name: PYAUDIO_VERSION
+#         value: 0.2.14
+#       - name: BUILD_CMD
+#         value: |
+#           apt-get install portaudio19-dev
+#           pip install -r requirements.txt
+#     deploy:
+#       script: docker build . -t api && docker run -p 8080:8080 api
